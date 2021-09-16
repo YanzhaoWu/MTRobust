@@ -16,7 +16,7 @@ import glob
 
 
 def downscale(args):
-    path_dataset = '/home/amogh/data/datasets/drn_data/DRN-move/cityscape_dataset'
+    path_dataset = '/home/yanzhaowu/git/MTRobust/data/cityscape'
     path_disparity = os.path.join(path_dataset, 'disparity')
     path_rgb = os.path.join(path_dataset, 'leftImg8bit')
     path_seg_labels = os.path.join(path_dataset, 'gtFine')

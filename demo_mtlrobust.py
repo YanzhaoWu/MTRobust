@@ -352,8 +352,9 @@ def test_seg(data_dir, modeldir, test_acc_output_dim, get_grad):
 
 from learning.adv_train_loop import train_seg_adv
 def main():
-    datadir = '/local/rcs/ECCV/Cityscape/cityscape_dataset'
-    modeldir = '/local/rcs/ECCV/Cityscape/model_zoo/DRN/drn_d_22_cityscapes.pth'
+    basedir = '/home/yanzhaowu/git/MTRobust'
+    datadir = basedir + '/data/cityscape/'
+    modeldir = basedir + '/model_weights/cityscapes/drn_d_22_cityscapes.pth'
     test_seg(datadir, modeldir, test_acc_output_dim=False, get_grad=True)
 
 
